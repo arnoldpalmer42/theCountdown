@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+.body {
+  background-color: #8B9EB7;
+}
+#txt {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+}
+#demo {
+    font-size: 42px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Indie Flower', cursive;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 25%;
+}
+.content-text {
+    height: 200px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+}
+.content-text:last-child {
+    font-size: 42px;
+    height: 150px;
+}
+.table {
+    width: 50%;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    color: black;
+    background-color:#8B9EB7;
+}

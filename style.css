@@ -27,7 +27,7 @@ body {
 }
 .content-text:last-child {
     font-size: 42px;
-    height: 150px;
+    padding: 20px;
 }
 .table {
     width: 50%;
@@ -37,3 +37,10 @@ body {
     color: black;
     background-color:#8B9EB7;
 }
+
+@media screen and (max-width: 600px) {
+    .content-text {
+      font-size: 44px;
+      text-align: center;
+    }
+  }

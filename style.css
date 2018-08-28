@@ -43,4 +43,7 @@ body {
       font-size: 44px;
       text-align: center;
     }
+    .table {
+        font-size: 28px;
+    }
   }

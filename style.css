@@ -12,7 +12,7 @@ body {
     font-size: 42px;
     text-align: center;
     margin: auto;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Abril Fatface', cursive;
     border: 2px solid black;
     box-sizing: border-box;
     width: 25%;
@@ -23,19 +23,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Abril Fatface', cursive;
 }
+
 .content-text:last-child {
-    font-size: 42px;
-    padding: 20px;
+    height: 100px;
 }
+
 .table {
     width: 50%;
     text-align: center;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-size: 32px;
     color: black;
     background-color:#8B9EB7;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.fighter-bio h4 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 10px;
+}
+.fighter-bio p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    margin: 0;
+    padding: 0;
+}
+.fighter-bio p:last-child {
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -45,5 +72,14 @@ body {
     }
     .table {
         font-size: 24px;
+    }
+    .fighter-bio h4 {
+        font-size: 24px;
+    }
+    .fighter-bio p {
+        font-size: 20px;
+    }
+    #demo {
+        width: 90%;
     }
   }

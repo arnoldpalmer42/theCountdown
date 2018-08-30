@@ -13,10 +13,25 @@ body {
     text-align: center;
     margin: auto;
     font-family: 'Abril Fatface', cursive;
-    border: 2px solid black;
+    border: 2px solid white;
     box-sizing: border-box;
     width: 25%;
+    color: white;
 }
+.bg { 
+    /* The image used */
+    background-image: url("http://warzoneboxingclub.com/wp-content/uploads/2017/07/Dollarphotoclub_75777773.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .content-text {
     height: 200px;
     font-size: 70px;
@@ -24,10 +39,17 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Abril Fatface', cursive;
+    color: white;
 }
 
-.content-text:last-child {
-    height: 100px;
+.content-text-tape {
+    color: black;
+    height: 200px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .table {
@@ -81,12 +103,19 @@ body {
 .poll {
     justify-content: center;
     display: flex;
+    text-align: center;
 }
 @media screen and (max-width: 600px) {
     .content-text {
-      font-size: 44px;
+      font-size: 40px;
       text-align: center;
+      height: 150px;
     }
+    .content-text-tape {
+        font-size: 40px;
+        text-align: center;
+        height: 150px;
+      }
     .table {
         font-size: 24px;
     }

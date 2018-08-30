@@ -131,4 +131,7 @@ body {
     .bio p {
         font-size: 18px;
     }
+    .bg {
+        height: 300px;
+    }
   }

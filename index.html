@@ -1,88 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Countdown</title>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js'></script>
-    <script src='script.js'></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Final Countdown</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src='script.js'></script>
+  <script src='app.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 </head>
+
 <body onload="startTime()">
 
-    <div id="txt"></div>
-    <div class="body">
-        <div class="jumbotron bg">
-          <h1 class="content-text col-sm-12">Travis v. AJ Countdown</h1>
-          <div class="col-sm-12"><p id="demo"></p></div>
-          <h1 class="content-text col-sm-12">Who will come out on top?</h1>
-        </div>
-        <div>
-            <table align="center" class="table table-bordered table-dark">
-                <tr>
-                  <th scope="col">Battle Participant</th>
-                  <th scope="col">Odds</th> 
-                  <th scope="col">Money Line</th>
-                </tr>
-                <tr>
-                  <td>Travis "Big Boy" Braz</td>
-                  <td>5/2</td> 
-                  <td>+150</td>
-                </tr>
-                <tr>
-                  <td>A "The Hammer" J</td>
-                  <td>3/2</td> 
-                  <td>-150</td>
-                </tr>
-              </table>
-            </div>
-            <h1 class="content-text-tape col-sm-12" style="text-decoration: underline">Tale of the tape</h1>
-            <div class="image">
-              <img src="https://www.cumminsandwhite.com/wp-content/uploads/2018/01/IMG_4396-small.jpg">
-            </div>
-            <div class="fighter-bio">
-              <h4 class="col-sm-12">A "The Hammer" J</h4>
-              <p>Record: 7-2</p>
-              <p>Height: 70"</p>
-              <p>Weight: 170 lbs</p>
-              <p>Reach: 35"</p>
-              <div class="bio">
-                <p>Bio: As the saying goes "Crime doesn't pay" and A "The Hammer" J is here to remind you how strong the law can really be when its on your side.
-                  With a degree in ass-kicking, and oh yeah... law, you might say AJ is a one of a kind half Italian, half lawyer - full butt kicking machine. Once this man gets a drink
-                  in him... watch out! With an outstanding 7-2 record in the Underground Orange County Bro Fighting League (UOCBFL) AJ is an old face with a new mission - bring down Big Boy.
-                </p>
-              </div>
-            </div>
-            <div class="image">
-              <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/77091_1320349829141_6040180_n.jpg?_nc_cat=0&oh=c26962536a9be99fd86dd19136351565&oe=5BF1B41B" width="200" height="300">
-            </div>
-            <div class="fighter-bio">
-              <h4 class="col-sm-12">Travis "Big Boy" Braz</h4>
-              <p>Record: 3-9</p>
-              <p>Height: 71"</p>
-              <p>Weight: 195 lbs</p>
-              <p>Reach: 36"</p>
-              <div class="bio">
-                <p>Bio: It's 2 am and you're awoken by a strong scent from the kitchen. "What is that?" your mind ponders as you cartoonishly float to the kitchen awaiting 
-                  to inspect this divine smell. Today's your lucky day. It's Travis "Big Boy" Braz and he's making a can of whoop ass... and fried salami. With a less than stellar 3-9 
-                  record in the Underground Orange County Bro Fighting League (UOCBFL) and a tough defeat behind Out of the Park Pizza last week - Big Boy Braz is hungry and ready for
-                  revenge. 
-                </p>
-              </div>
-            </div>
-            <div class="poll">
-                <div id="qp_all2054202" style="width:100%;max-width:400px;"><link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><STYLE>BODY {border-color: rgb(0, 0, 0);color: rgb(0, 0, 0)} #main {background:transparent;}#qp_main2054202 .qp_btna:hover input {background: rgb(0, 38, 68)!important} #qp_all2054202 {max-width:815px; margin:0 auto;}</STYLE><div id="qp_main2054202" fp='1C9a4C14-56' results=0 style="border-radius: 0px;margin: 0px auto;padding: 15px;background: rgb(139, 158, 183);font-family: 'Open Sans', sans-serif, Arial;color: rgb(0, 0, 0);border: 0px none rgb(0, 67, 121);max-width: 815px;box-sizing: border-box;text-align: left"><div style="font-size: 1.2em;background-color: rgb(0, 67, 121);color: rgb(255, 255, 255);font-family: 'Open Sans', sans-serif, Arial"><div style="line-height: 30px;padding: 10px 15px">Who will win?</div></div><form id="qp_form2054202" action="//www.poll-maker.com/results2054202x1C9a4C14-56" method="post" target="_blank" style="display: inline;margin: 0px;padding: 0px"><div style="padding: 0px"><input type=hidden name="qp_d2054202" value="43342.4198379681-43342.419876344"><div style="display: block;color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px" class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}"><span style="display: block;padding-left: 30px;cursor: inherit"><input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;" name="qp_v2054202" type="radio" value="1" />Big Boy Braz</span></div><div style="display: block;color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px" class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}"><span style="display: block;padding-left: 30px;cursor: inherit"><input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;" name="qp_v2054202" type="radio" value="2" />The Hammer</span></div></div><div style="padding-left: 0px;clear: both;text-align: left;margin: 1em auto"><a style="display: inline-block;box-sizing: border-box;padding-right: 5px;text-decoration: none" class="qp_btna" href="#"><input name="qp_b2054202" style="min-width: 8.5em;padding: 0.5em;background-color: rgb(0, 67, 121);font-family: 'Open Sans', sans-serif, Arial;font-size: 16px;color: rgb(255, 255, 255);cursor: pointer;border: 0px;-webkit-appearance: none;border-radius: 0px" type="submit" btype="v" value="Vote" /></a><a style="display: inline-block;box-sizing: border-box;padding-left: 5px;text-decoration: none" class="qp_btna" href="#"><input name="qp_b2054202" style="min-width: 8.5em;padding: 0.5em;background-color: rgb(0, 67, 121);font-family: 'Open Sans', sans-serif, Arial;font-size: 16px;color: rgb(255, 255, 255);cursor: pointer;border: 0px;-webkit-appearance: none;border-radius: 0px" type="submit" btype="r" value="Results" /></a></div></form><div style="display:none"><div id="qp_rp2054202" style="font-size: 11px;width: 5ex;text-align: right;overflow: hidden;position: absolute;right: 5px;height: 1.5em;line-height: 1.5em"></div><div id="qp_rv2054202" style="font-size: 11px;width: 0%;line-height: 1.5em;text-align: right;color: rgb(255, 255, 255);box-sizing: border-box;padding-right: 3px"></div><div id="qp_rb2054202" style="color: rgb(255, 255, 255);display: block;font-size: 12px"></div><div id="qp_rva2054202" style="background: rgb(0, 111, 185);border-color: rgb(0, 111, 185)"></div><div id="qp_rvb2054202" style="background: rgb(22, 52, 99);border-color: rgb(22, 52, 99)"></div><div id="qp_rvc2054202" style="background: rgb(91, 207, 252);border-color: rgb(20, 129, 171)"></div></div></div><div style='text-align:center; margin:5px;'><a id="qp_foot2054202" href="https://linkto.run/e/62Y1FY8L"></a> </div></div><script src="//scripts.poll-maker.com/3012/scpolls.js" language="javascript"></script>
-            </div>
-        </div>
+  <div id="txt"></div>
+  <div class="body">
+    <div class="jumbotron bg">
+      <h1 class="content-text col-sm-12">Travis v. AJ Countdown</h1>
+      <div class="col-sm-12">
+        <p id="demo"></p>
+      </div>
+      <h1 class="content-text col-sm-12">Who will come out on top?</h1>
+      <div>
+        <table align="center" class="table table-bordered table-dark">
+          <tr>
+            <th scope="col">Battle Participant</th>
+            <th scope="col">Odds</th>
+            <th scope="col">Money Line</th>
+          </tr>
+          <tr>
+            <td>Travis "Big Boy" Braz</td>
+            <td>5/2</td>
+            <td>+150</td>
+          </tr>
+          <tr>
+            <td>A "The Hammer" J</td>
+            <td>3/2</td>
+            <td>-150</td>
+          </tr>
+        </table>
+      </div>
     </div>
-    
-    </body>
-</html> 
+    <h1 class="content-text-tape col-sm-12" style="text-decoration: underline">Tale of the tape</h1>
+    <div class="image">
+      <img src="https://www.cumminsandwhite.com/wp-content/uploads/2018/01/IMG_4396-small.jpg">
+    </div>
+    <div class="fighter-bio">
+      <h4 class="col-sm-12">A "The Hammer" J</h4>
+      <p>Record: 7-2</p>
+      <p>Height: 70"</p>
+      <p>Weight: 170 lbs</p>
+      <p>Reach: 35"</p>
+      <div class="bio">
+        <p>Bio: As the saying goes "Crime doesn't pay" and A "The Hammer" J is here to remind you how strong the law can
+          really be when its on your side. With a degree in ass-kicking, and oh yeah... law, you might say AJ is a one of
+          a kind half Italian, half lawyer - full butt kicking machine. Once this man gets a drink in him... watch out! With
+          an outstanding 7-2 record in the Underground Orange County Bro Fighting League (UOCBFL) AJ is an old face with
+          a new mission - bring down Big Boy.
+        </p>
+      </div>
+    </div>
+    <div class="image">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/77091_1320349829141_6040180_n.jpg?_nc_cat=0&oh=c26962536a9be99fd86dd19136351565&oe=5BF1B41B"
+        width="200" height="300">
+    </div>
+    <div class="fighter-bio">
+      <h4 class="col-sm-12">Travis "Big Boy" Braz</h4>
+      <p>Record: 3-9</p>
+      <p>Height: 71"</p>
+      <p>Weight: 195 lbs</p>
+      <p>Reach: 36"</p>
+      <div class="bio">
+        <p>Bio: It's 2 am and you're awoken by a strong scent from the kitchen. "What is that?" your mind ponders as you
+          cartoonishly float to the kitchen awaiting to inspect this divine smell. Today's your lucky day. It's Travis "Big
+          Boy" Braz and he's making a can of whoop ass... and fried salami. With a less than stellar 3-9 record in the Underground
+          Orange County Bro Fighting League (UOCBFL) and a tough defeat behind Out of the Park Pizza last week - Big Boy
+          Braz is hungry and ready for revenge.
+        </p>
+      </div>
+    </div>
+    <div class="poll">
+      <div id="qp_all2054202" style="width:100%;max-width:400px;">
+        <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <STYLE>
+          BODY {
+            border-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0)
+          }
 
+          #main {
+            background: transparent;
+          }
+
+          #qp_main2054202 .qp_btna:hover input {
+            background: rgb(0, 38, 68) !important
+          }
+
+          #qp_all2054202 {
+            max-width: 815px;
+            margin: 0 auto;
+          }
+        </STYLE>
+        <div id="qp_main2054202" fp='1C9a4C14-56' results=0 style="border-radius: 0px;margin: 0px auto;padding: 15px;background: rgb(139, 158, 183);font-family: 'Open Sans', sans-serif, Arial;color: rgb(0, 0, 0);border: 0px none rgb(0, 67, 121);max-width: 815px;box-sizing: border-box;text-align: left">
+          <div style="font-size: 1.2em;background-color: rgb(0, 67, 121);color: rgb(255, 255, 255);font-family: 'Open Sans', sans-serif, Arial">
+            <div style="line-height: 30px;padding: 10px 15px">Who will win?</div>
+          </div>
+          <form id="qp_form2054202" action="//www.poll-maker.com/results2054202x1C9a4C14-56" method="post" target="_blank" style="display: inline;margin: 0px;padding: 0px">
+            <div style="padding: 0px">
+              <input type=hidden name="qp_d2054202" value="43342.4198379681-43342.419876344">
+              <div style="display: block;color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px"
+                class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
+                <span style="display: block;padding-left: 30px;cursor: inherit">
+                  <input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;"
+                    name="qp_v2054202" type="radio" value="1" />Big Boy Braz</span>
+              </div>
+              <div style="display: block;color: rgb(255, 255, 255);background-color: rgb(0, 141, 255);font-family: 'Open Sans', sans-serif, Arial;font-size: 1.1em;line-height: 1.5;padding: 13px 8px 10px;margin: 10px 0px;clear: both;border-radius: 6px"
+                class="qp_a" onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
+                <span style="display: block;padding-left: 30px;cursor: inherit">
+                  <input style="float: left;width: 20px;margin-left: -25px;margin-top: 2px;padding: 0px;height: 20px;-webkit-appearance:radio;"
+                    name="qp_v2054202" type="radio" value="2" />The Hammer</span>
+              </div>
+            </div>
+            <div style="padding-left: 0px;clear: both;text-align: left;margin: 1em auto">
+              <a style="display: inline-block;box-sizing: border-box;padding-right: 5px;text-decoration: none" class="qp_btna" href="#">
+                <input name="qp_b2054202" style="min-width: 8.5em;padding: 0.5em;background-color: rgb(0, 67, 121);font-family: 'Open Sans', sans-serif, Arial;font-size: 16px;color: rgb(255, 255, 255);cursor: pointer;border: 0px;-webkit-appearance: none;border-radius: 0px"
+                  type="submit" btype="v" value="Vote" />
+              </a>
+              <a style="display: inline-block;box-sizing: border-box;padding-left: 5px;text-decoration: none" class="qp_btna" href="#">
+                <input name="qp_b2054202" style="min-width: 8.5em;padding: 0.5em;background-color: rgb(0, 67, 121);font-family: 'Open Sans', sans-serif, Arial;font-size: 16px;color: rgb(255, 255, 255);cursor: pointer;border: 0px;-webkit-appearance: none;border-radius: 0px"
+                  type="submit" btype="r" value="Results" />
+              </a>
+            </div>
+          </form>
+          <div style="display:none">
+            <div id="qp_rp2054202" style="font-size: 11px;width: 5ex;text-align: right;overflow: hidden;position: absolute;right: 5px;height: 1.5em;line-height: 1.5em"></div>
+            <div id="qp_rv2054202" style="font-size: 11px;width: 0%;line-height: 1.5em;text-align: right;color: rgb(255, 255, 255);box-sizing: border-box;padding-right: 3px"></div>
+            <div id="qp_rb2054202" style="color: rgb(255, 255, 255);display: block;font-size: 12px"></div>
+            <div id="qp_rva2054202" style="background: rgb(0, 111, 185);border-color: rgb(0, 111, 185)"></div>
+            <div id="qp_rvb2054202" style="background: rgb(22, 52, 99);border-color: rgb(22, 52, 99)"></div>
+            <div id="qp_rvc2054202" style="background: rgb(91, 207, 252);border-color: rgb(20, 129, 171)"></div>
+          </div>
+        </div>
+        <div style='text-align:center; margin:5px;'>
+          <a id="qp_foot2054202" href="https://linkto.run/e/62Y1FY8L"></a>
+        </div>
+      </div>
+      <script src="//scripts.poll-maker.com/3012/scpolls.js" language="javascript"></script>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
